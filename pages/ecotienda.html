@@ -24,14 +24,14 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="donde reciclo.html">Donde reciclo</a>
+                    <a class="nav-link" href="donde-reciclo.html">Donde reciclo</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Como reciclo
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="pages/como-reciclo-plastico.html">Plastico</a></li>
+                      <li><a class="dropdown-item" href="como-reciclo-plastico.html">Plastico</a></li>
                       <li><a class="dropdown-item" href="#">Carton y papel</a></li>
                       <li><a class="dropdown-item" href="#">Vidrio</a></li>
                       <li><a class="dropdown-item" href="#">Metales</a></li>
@@ -57,47 +57,56 @@
     </header>
 
     <main>
-      <form class="ecotienda">
+      <div class="container mb-5">
+        <form class="ecotienda">
+        <div class="row mb-2">
           <h2>Qué estás buscando</h2> 
-          <br>
-          <select name="tipo" id="tipo" class="btn btn-outline-success">
+        </div>
+        <div class="row">
+          <select name="tipo" id="tipo" class="form-select">
               <option value="">Seleccionar..</option>
               <option value="composteras">Composteras</option>
               <option value="cocina">Productos de cocina</option>
               <option value="higiene">Productos de higiene</option>
               <option value="copa-menstrual">Copa menstrual</option>
           </select>
+        </div>
       </form>
+      </div>
+<div class="container">
+  <div class="row">
 
-      <container class="grid">
-          <div class="grid__hijo grid__hijo--producto1">
-              <h2>Composteras</h2>
-              <a href="products-composts.html"><img class="grid__img1--producto" src="../images/compostera-residuos-organicos.jpeg"></img></a>
-          </div>
-
-          <div class="grid__hijo grid__hijo--producto2">
-              <h2>Productos de cocina</h2>
-              <a href="products-cocina.html"><img class="grid__img2--producto" src="../images/product-cocina.webp"></img></a>
-          </div>
-          <div class="grid__hijo grid__hijo--producto3">
-              <h2>Productos de higiene</h2>
-              <a href="products-higiene.html"><img class="grid__img3--producto" src="../images/product-higiene.png"></img></a>
-          </div>
-
-          <div class="grid__hijo grid__hijo--producto4">
-              <h2>Copas menstruales</h2>
-              <a href="products-copas.html"><img class="grid__img4--producto" src="../images/product-copa.jpeg"></img></a>
-          </div>
-
-          <div class="grid__hijo grid__hijo--producto5">
-              <h2>Bolsas de tela</h2>
-              <a href="products-bolsas.html"><img class="grid__img5--producto" src="../images/bolsa.jpeg"></img></a>
-          </div>
-          <div class="grid__hijo grid__hijo--producto6">
-              <h2>Lencería erocológica</h2>
-              <a href="products-lenceria.html"><img class="grid__img6--producto" src="../images/lenceria ecologica 2.jpeg"></img></a>
-          </div>
-      </container>
+    <div class="grid">
+        <div class="grid__hijo grid__hijo--producto1">
+            <h2>Composteras</h2>
+            <a href="products-composts.html"><img class="grid__img--producto" src="../images/compostera-residuos-organicos.jpeg"></img></a>
+        </div>
+  
+        <div class="grid__hijo grid__hijo--producto2">
+            <h2>Productos de cocina</h2>
+            <a href="products-cocina.html"><img class="grid__img--producto" src="../images/product-cocina.webp"></img></a>
+        </div>
+        <div class="grid__hijo grid__hijo--producto3">
+            <h2>Productos de higiene</h2>
+            <a href="products-higiene.html"><img class="grid__img--producto" src="../images/product-higiene.png"></img></a>
+        </div>
+  
+        <div class="grid__hijo grid__hijo--producto4">
+            <h2>Copas menstruales</h2>
+            <a href="products-copas.html"><img class="grid__img--producto" src="../images/product-copa.jpeg"></img></a>
+        </div>
+  
+        <div class="grid__hijo grid__hijo--producto5">
+            <h2>Bolsas de tela</h2>
+            <a href="products-bolsas.html"><img class="grid__img--producto" src="../images/bolsa.jpeg"></img></a>
+        </div>
+        <div class="grid__hijo grid__hijo--producto6">
+            <h2>Lencería erocológica</h2>
+            <a href="products-lenceria.html"><img class="grid__img--producto" src="../images/lenceria ecologica 2.jpeg"></img></a>
+        </div>
+      </div>
+  </div>
+</div>
 
   </main>
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
