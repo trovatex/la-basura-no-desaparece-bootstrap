@@ -3,6 +3,9 @@
     padding: 0%;
 } */
 
+
+
+
 /*index css*/
 .title {
     display: flex;
@@ -18,6 +21,9 @@
     display: flex;
     justify-content: center;
 }
+
+
+
 
 /*Ecotienda css*/
 .grid {
@@ -64,6 +70,9 @@
 .grid__img5--producto:hover {transform: scale(1.4);}
 .grid__img6--producto:hover {transform: scale(1.4);}
 
+
+
+
 /*Contacto css*/
 .mb-3 {
     padding: 10px 50px 10px 50px;
@@ -77,3 +86,38 @@
 .form-check-input {
     margin-left: 70px;
 }
+
+
+
+
+/* Media querys para Ecotienda */
+/*vista tablet */
+@media screen and (max-width: 1024px) {
+    .ecotienda {
+            background-image: 100%;
+        }
+    
+    .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+        }
+    }
+
+/*vista mobile */
+@media screen and (max-width: 600px) {
+    .ecotienda {
+            background-image: none;
+        }
+    
+    .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+        }
+
+    }
