@@ -1,0 +1,79 @@
+/* * {
+    margin: 0%;
+    padding: 0%;
+} */
+
+/*index css*/
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo {
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.donde-reciclo {
+    display: flex;
+    justify-content: center;
+}
+
+/*Ecotienda css*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+} 
+
+.grid__hijo grid__hijo--producto1, .grid__hijo grid__hijo--producto2, 
+.grid__hijo grid__hijo--producto3, .grid__hijo grid__hijo--producto4, 
+.grid__hijo grid__hijo--producto5, .grid__hijo grid__hijo--producto6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+/*Transicion y animacion*/
+.grid__img1--producto, .grid__img2--producto, .grid__img3--producto, 
+.grid__img4--producto, .grid__img5--producto, .grid__img6--producto{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    border: none;
+
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.grid__img1--producto:hover {opacity: 1}
+.grid__img2--producto:hover {opacity: 1}
+.grid__img3--producto:hover {opacity: 1}
+.grid__img4--producto:hover {opacity: 1}
+.grid__img5--producto:hover {opacity: 1}
+.grid__img6--producto:hover {opacity: 1}
+
+.grid__img1--producto:hover {transform: scale(1.4);}
+.grid__img2--producto:hover {transform: scale(1.4);}
+.grid__img3--producto:hover {transform: scale(1.4);}
+.grid__img4--producto:hover {transform: scale(1.4);}
+.grid__img5--producto:hover {transform: scale(1.4);}
+.grid__img6--producto:hover {transform: scale(1.4);}
+
+/*Contacto css*/
+.mb-3 {
+    padding: 10px 50px 10px 50px;
+}
+
+#button {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.form-check-input {
+    margin-left: 70px;
+}
