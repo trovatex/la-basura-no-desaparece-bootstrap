@@ -29,7 +29,7 @@
     align-items: center;
 }
 
-/*Ecotienda css*/
+/*Ecotienda css ya esta pasado a sass */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
