@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+  .grid .grid__hijo h2 {
+    z-index: 9999;
+    position: relative; }
+  .grid .grid__img--producto {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s;
+    position: relative;
+    z-index: 0; }
+    .grid .grid__img--producto .grid__img--producto:hover {
+      opacity: 1;
+      transform: scale(1.4);
+      z-index: 999; }
+
+#tipo {
+  width: fit-content; }
