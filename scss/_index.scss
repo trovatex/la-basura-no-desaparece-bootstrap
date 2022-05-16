@@ -1,12 +1,19 @@
+// Variables 
+$colorprimary: hsl(134, 34%, 47%);
+$colorsecondary: hsl(306, 68%, 43%);
+$fontbase: 18px;
 * {
     margin: 0%;
     padding: 0%;
 } 
 
-.title {
+.main-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $colorprimary;
+    font-size: 52px;
+    font-weight: bold;
 }
 
 .parrafo {
@@ -16,4 +23,18 @@
 .donde-reciclo {
     display: flex;
     justify-content: center;
+}
+
+@mixin boton-style {
+    background-color: $colorprimary;
+    font-size: $fontbase;
+    border-color: $colorprimary;
+    &:hover {
+    background-color: $colorsecondary;
+    border-color: $colorsecondary;
+    }
+}
+
+.btn {
+    @include boton-style;
 }
