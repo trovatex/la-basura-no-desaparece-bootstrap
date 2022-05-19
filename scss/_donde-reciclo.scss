@@ -1,3 +1,8 @@
 .donde-reciclo {
 @extend .main-title;
 }
+
+.donde-reciclo {
+    display: flex;
+    justify-content: center;
+}

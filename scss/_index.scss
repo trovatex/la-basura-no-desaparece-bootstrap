@@ -1,15 +1,17 @@
-// Variables 
+// Variables -----------------------------------------------------------------------------------------------
 $colorprimary: hsl(134, 34%, 47%);
 $colorsecondary: hsl(306, 68%, 43%);
+$colorthird: #EDB51F;
+$colorfourth: rgb(25, 25, 25);
 $fontbase: 18px;
+// ---------------------------------------------------------------------------------------------------------
 * {
     margin: 0%;
     padding: 0%;
 } 
 
 .main-title {
-    display: flex;
-    justify-content: center;
+    @extend .donde-reciclo;
     align-items: center;
     color: $colorprimary;
     font-size: 52px;
@@ -18,13 +20,15 @@ $fontbase: 18px;
 
 .parrafo {
     padding: 20px 20px 20px 20px;
+    background-color: $colorfourth; 
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 0,5px;
 }
 
-.donde-reciclo {
-    display: flex;
-    justify-content: center;
-}
-
+// Mixin --------------------------------------------------------------------------------------------------------
 @mixin boton-style {
     background-color: $colorprimary;
     font-size: $fontbase;
@@ -38,3 +42,4 @@ $fontbase: 18px;
 .btn {
     @include boton-style;
 }
+// --------------------------------------------------------------------------------------------------------------

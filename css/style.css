@@ -1,7 +1,3 @@
-* {
-  margin: 0%;
-  padding: 0%; }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,20 +51,20 @@
   margin: 0%;
   padding: 0%; }
 
-.main-title, .que-buscas, .contacto, .donde-reciclo, .card-title {
-  display: flex;
-  justify-content: center;
+.que-buscas, .contacto, .donde-reciclo, .main-title, .card-title {
   align-items: center;
   color: #4fa162;
   font-size: 52px;
   font-weight: bold; }
 
 .parrafo {
-  padding: 20px 20px 20px 20px; }
-
-.donde-reciclo {
-  display: flex;
-  justify-content: center; }
+  padding: 20px 20px 20px 20px;
+  background-color: #191919;
+  border-radius: 15px;
+  padding: 40px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 0,5px; }
 
 .btn {
   background-color: #4fa162;
@@ -77,10 +73,6 @@
   .btn:hover {
     background-color: #b823a9;
     border-color: #b823a9; }
-
-* {
-  margin: 0%;
-  padding: 0%; }
 
 .mb-3 {
   padding: 10px 50px 10px 50px; }
@@ -91,3 +83,7 @@
 
 .form-check-input {
   margin-left: 70px; }
+
+.donde-reciclo, .main-title {
+  display: flex;
+  justify-content: center; }

@@ -2,7 +2,6 @@
     @extend .main-title;
     }
 
-// @each $color in $pallete {
-//     @include 
-// }
-
+* {
+    @extend *;
+}
