@@ -1,21 +1,33 @@
-// Variables -----------------------------------------------------------------------------------------------
-$colorprimary: hsl(134, 34%, 47%);
-$colorsecondary: hsl(306, 68%, 43%);
+// Variables ---------------------------------------------------------------------------------------------------
+$colorprimary: #4fa162;
+$colorsecondary: #b823a9;
 $colorthird: #EDB51F;
-$colorfourth: rgb(25, 25, 25);
+$colorfourth: #191919;
 $fontbase: 18px;
-// ---------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------
 * {
     margin: 0%;
     padding: 0%;
 } 
-
+// Extend ------------------------------------------------------------------------------------------------------
 .main-title {
     @extend .donde-reciclo;
     align-items: center;
     color: $colorprimary;
     font-size: 52px;
     font-weight: bold;
+    background-color: $colorfourth;
+    padding: 50px;
+    &:hover {
+        background-color: $colorthird;
+        color: #191919;
+        }
+}
+// -------------------------------------------------------------------------------------------------------------
+.card-title {
+    font-style: none;
+    background: none;
+    padding: 0px;
 }
 
 .parrafo {
@@ -30,6 +42,7 @@ $fontbase: 18px;
 // Mixin --------------------------------------------------------------------------------------------------------
 @mixin boton-style {
     background-color: $colorprimary;
+    color: white;
     font-size: $fontbase;
     border-color: $colorprimary;
     &:hover {

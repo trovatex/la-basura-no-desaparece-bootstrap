@@ -55,7 +55,17 @@
   align-items: center;
   color: #4fa162;
   font-size: 52px;
-  font-weight: bold; }
+  font-weight: bold;
+  background-color: #191919;
+  padding: 50px; }
+  .que-buscas:hover, .contacto:hover, .donde-reciclo:hover, .main-title:hover, .card-title:hover {
+    background-color: #EDB51F;
+    color: #191919; }
+
+.card-title {
+  font-style: none;
+  background: none;
+  padding: 0px; }
 
 .parrafo {
   padding: 20px 20px 20px 20px;
@@ -67,6 +77,7 @@
 
 .btn {
   background-color: #4fa162;
+  color: white;
   font-size: 18px;
   border-color: #4fa162; }
   .btn:hover {
