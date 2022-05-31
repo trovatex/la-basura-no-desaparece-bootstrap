@@ -1,68 +1,43 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
-  .grid .grid__hijo h2 {
-    z-index: 9999;
-    position: relative; }
-  .grid .grid__img--producto {
-    width: 350px;
-    height: 200px;
-    display: flex;
-    border: none;
-    opacity: 0.6;
-    transition: 0.3s;
-    position: relative;
-    z-index: 0; }
-    .grid .grid__img--producto:hover {
-      opacity: 1;
-      transform: scale(1.4);
-      z-index: 999; }
+.grid__img--producto {
+  display: flex;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+  justify-content: center; }
+  .grid__img--producto:hover {
+    opacity: 1;
+    transform: scale(1.4);
+    z-index: 1; }
+
+.title-product {
+  z-index: 9999;
+  display: flex;
+  justify-content: center; }
 
 #tipo {
   width: fit-content; }
-
-/* Media querys*/
-/*vista tablet */
-@media screen and (max-width: 1024px) {
-  .ecotienda {
-    background-image: 100%; }
-    .ecotienda .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 5px;
-      grid-row-gap: 5px; } }
-
-/*vista mobile */
-@media screen and (max-width: 600px) {
-  .ecotienda {
-    background-image: none; }
-    .ecotienda .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      grid-column-gap: 5px;
-      grid-row-gap: 5px; } }
 
 * {
   margin: 0%;
   padding: 0%; }
 
-.que-buscas, .contacto, .donde-reciclo, .main-title, .card-title {
+.que-buscas, .contacto, .donde-reciclo, .main-title, .card-title-sub {
   align-items: center;
   color: #4fa162;
   font-size: 52px;
   font-weight: bold;
   background-color: #191919;
   padding: 50px; }
-  .que-buscas:hover, .contacto:hover, .donde-reciclo:hover, .main-title:hover, .card-title:hover {
+  .que-buscas:hover, .contacto:hover, .donde-reciclo:hover, .main-title:hover, .card-title-sub:hover {
     background-color: #4fa162;
     color: #191919; }
 
-.card-title {
+.card-title-sub {
   font-style: none;
   background: none;
   padding: 0px; }
