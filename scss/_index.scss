@@ -1,7 +1,7 @@
 // Variables ---------------------------------------------------------------------------------------------------
 $colorprimary: #4fa162;
-$colorsecondary: #b823a9;
-$colorthird: #EDB51F;
+$colorsecondary: #EDB51F;
+$colorthird:  #b823a9;
 $colorfourth: #191919;
 $fontbase: 18px;
 // -------------------------------------------------------------------------------------------------------------
@@ -19,11 +19,12 @@ $fontbase: 18px;
     background-color: $colorfourth;
     padding: 50px;
     &:hover {
-        background-color: $colorthird;
-        color: #191919;
+        background-color: $colorprimary;
+        color: $colorfourth;
         }
 }
 // -------------------------------------------------------------------------------------------------------------
+
 .card-title {
     font-style: none;
     background: none;
@@ -53,5 +54,9 @@ $fontbase: 18px;
 
 .btn {
     @include boton-style;
+}
+
+.logo {
+    margin-right: 200px;
 }
 // --------------------------------------------------------------------------------------------------------------

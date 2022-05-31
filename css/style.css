@@ -59,7 +59,7 @@
   background-color: #191919;
   padding: 50px; }
   .que-buscas:hover, .contacto:hover, .donde-reciclo:hover, .main-title:hover, .card-title:hover {
-    background-color: #EDB51F;
+    background-color: #4fa162;
     color: #191919; }
 
 .card-title {
@@ -81,8 +81,11 @@
   font-size: 18px;
   border-color: #4fa162; }
   .btn:hover {
-    background-color: #b823a9;
-    border-color: #b823a9; }
+    background-color: #EDB51F;
+    border-color: #EDB51F; }
+
+.logo {
+  margin-right: 200px; }
 
 .mb-3 {
   padding: 10px 50px 10px 50px; }
