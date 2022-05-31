@@ -1,8 +1,6 @@
 .grid__img--producto {
   display: flex;
-  width: 350px;
-  height: 250px;
-  display: flex;
+  width: auto;
   border: none;
   opacity: 0.6;
   transition: 0.3s;
